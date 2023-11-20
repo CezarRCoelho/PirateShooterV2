@@ -200,6 +200,7 @@ MonoBehaviour:
   _rightCannons: []
   _maxFrontCannonsRotation: 45
   _maxSideCannonsRotation: 0
+  _cannonDamage: 5
 --- !u!114 &744272551902908092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,7 +382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ship: {fileID: 744272551902908092}
   _shipSprite: {fileID: 724518814325268123}
-  _healthBarViewPrefab: {fileID: 5458156442074364750, guid: 5636dd4c69d3b3f4f937f36a5fcc1df1, type: 3}
+  _healthBarViewPrefab: {fileID: 5458156442074364750, guid: 5a1e4e8b4354d76488497d3b85550621, type: 3}
   _shipSprites:
   - {fileID: 21300000, guid: e3bad1016cb98be42b3fcaae001e58d2, type: 3}
   - {fileID: 21300000, guid: 2cee13a60a7317d498d2ab5e548ee250, type: 3}

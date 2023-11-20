@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4412319630441473332}
   - component: {fileID: 5458156442074364750}
   m_Layer: 5
-  m_Name: HealthbarCanvas
+  m_Name: PlayerHealthbarCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,7 +269,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 8391910567750459219}
   m_HandleRect: {fileID: 0}
