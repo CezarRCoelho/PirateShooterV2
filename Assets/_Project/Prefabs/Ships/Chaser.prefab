@@ -341,7 +341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ship: {fileID: 209485042197809157}
   _shipSprite: {fileID: 5949731477434830578}
-  _healthBarViewPrefab: {fileID: 5458156442074364750, guid: 5636dd4c69d3b3f4f937f36a5fcc1df1, type: 3}
+  _healthBarViewPrefab: {fileID: 5458156442074364750, guid: 5a1e4e8b4354d76488497d3b85550621, type: 3}
   _shipSprites:
   - {fileID: 21300000, guid: df44fe395ca05a24ea7715c3b4c263e8, type: 3}
   - {fileID: 21300000, guid: 01e6c028337208c4ba1c67b4060008cd, type: 3}
