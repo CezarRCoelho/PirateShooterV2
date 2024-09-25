@@ -94,10 +94,7 @@ namespace PirateShooter
 
             float volume = _muted ? 0 : _volume;
 
-            foreach (SoundTypeAudioSource activeSound in _activeLoopedSounds)
-            {
-                activeSound.AudioSource.volume = volume;
-            }
+            UpdateLoopedSoundsVolume(volume);
         }
 
         public void UpdateVolume(float volume)
@@ -105,9 +102,19 @@ namespace PirateShooter
             _volume = volume;
             _muted = volume <= 0;
 
-            foreach (SoundTypeAudioSource activeSound in _activeLoopedSounds)
+            UpdateLoopedSoundsVolume(volume);
+        }
+
+        private void UpdateLoopedSoundsVolume(float volume)
+        {
+            for (int i = _activeLoopedSounds.Count -1; i >= 0; i--)
             {
-                activeSound.AudioSource.volume = _volume;
+                if (_activeLoopedSounds[i].AudioSource == null)
+                {
+                    _activeLoopedSounds.RemoveAt(i);
+                    continue;
+                }
+                _activeLoopedSounds[i].AudioSource.volume = volume;
             }
         }
 
